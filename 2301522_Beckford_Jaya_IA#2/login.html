@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Conf - Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="form-page">
+    <header class="main-header">
+        <a href="index.html" class="logo-container" aria-label="Coding Conf Home">
+            <img src="assets/images/logo-mark.png" alt="Coding Conf Logo Mark" width="40" height="40">
+            <span>Coding Conf</span>
+        </a>
+    </header>
+
+    <div class="background-lines-container">
+        <img src="assets/images/pattern-lines.png" alt="">
+    </div>
+
+    <div class="background-squiggle-container">
+        <img src="assets/images/pattern-squiggly-line-bottom-desktop.png" alt="">
+    </div>
+
+    <main class="form-main">
+        <div class="form-header-text">
+            <h1>Your Journey to <span class="highlight-orange">Coding Conf</span> 2026 Starts Here!</h1>
+            <p>Secure your spot at next year's biggest coding conference.</p>
+        </div>
+
+        <form id="registration-form" novalidate>
+            <div class="input-group" id="upload-group">
+                <label for="avatar">Upload Avatar</label>
+                
+                <div class="file-upload-box" id="upload-box">                    
+                    <div class="upload-placeholder" id="upload-placeholder">
+                        <div class="icon-wrapper">
+                            <img src="assets/images/icon-upload.png" alt="Upload Icon" width="30" height="30">
+                        </div>
+                        <span>Drag and drop or click to upload</span>
+                    </div>
+
+                    <div class="upload-preview hidden" id="upload-preview">
+                        <img id="preview-img" src="" alt="Avatar Preview" class="preview-img">
+                        <div class="preview-actions">
+                            <button type="button" id="remove-img" class="btn-text">Remove image</button>
+                            <button type="button" id="change-img" class="btn-text">Change image</button>
+                        </div>
+                    </div>
+                    
+                    <input type="file" id="avatar" name="avatar" accept="image/jpeg, image/png">
+                </div>
+
+                <div class="helper-text" id="avatar-helper">
+                    <img src="assets/images/icon-info.png" alt="" class="info-icon" width="16" height="16">
+                    <span id="avatar-message">Upload your photo (JPG or PNG, max size: 500KB).</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="" aria-describedby="name-error">
+                <div class="helper-text error-text hidden" id="name-error">
+                    <img src="assets/images/icon-info.png" alt="" class="info-icon" width="16" height="16">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" aria-describedby="email-error">
+                <div class="helper-text error-text hidden" id="email-error">
+                    <img src="assets/images/icon-info.png" alt="" class="info-icon" width="16" height="16">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="github">GitHub Username</label>
+                <input type="text" id="github" name="github" placeholder="@JayaB3CK" aria-describedby="github-error">
+                <div class="helper-text error-text hidden" id="github-error">
+                    <img src="assets/images/icon-info.png" alt="" class="info-icon" width="16" height="16">
+                    <span></span>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-primary full-width">Generate My Ticket</button>
+        </form>
+    </main>
+
+    <script src="js/validation.js"></script>
+</body>
+</html>

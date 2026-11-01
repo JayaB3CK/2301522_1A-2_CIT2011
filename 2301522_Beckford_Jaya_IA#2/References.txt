@@ -1,0 +1,27 @@
+
+Technique 	Code location	                     Links
+is()	       is(main-header,...)	          https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:is
+
+
+where() 	:where(h1, h2, h3, ...)	         https://developer.mozilla.org/en-US/docs/Web/CSS/:where
+
+
+not()	        .error-text:not(.hidden)	https://developer.mozilla.org/en-US/docs/Web/CSS/:not
+
+
+backdrop-filter   input-group:has(...)	        https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter
+
+
+mask	            glass-ticket	         https://developer.mozilla.org/en-US/docs/Web/CSS/mask
+
+                                                 https://developer.mozilla.org/en-US/docs/Web/CSS/mask-composite
+
+
+
+clamp()	             h1	                         https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+
+
+
+//////////ALSO!!!
+The given svg files were unable to dowload so i used drawing software,
+i.e, Krita to get rid of the backgrounds, however doing so deleted the colour.
